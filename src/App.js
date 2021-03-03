@@ -1,10 +1,15 @@
 import { useState } from "react";
 import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react'
 import axios from 'axios'
+import styled, { css } from 'styled-components'
 
 import Search from './Search'
 import TitleBar from './TitleBar'
 import Products from './Products'
+
+styled(TitleBar)`
+	margin-top: 2em;
+`
 
 const App = (props) => {
 	var title = 'React 쇼핑몰'
